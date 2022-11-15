@@ -1,0 +1,6 @@
+.layer{
+    opacity: 0%;
+}
+.layer2:hover .layer{
+    opacity: 100%;
+    }

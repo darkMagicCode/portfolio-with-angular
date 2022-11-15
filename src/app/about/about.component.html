@@ -1,0 +1,29 @@
+<div [class.d-none]="showandHide" class=" bg-warning top-0 bottom-0 start-0 end-0  position-absolute m-2 opacity-100 row justify-content-center" style="z-index: 99; ">
+    <h2 class=" text-center">{{name}}</h2>
+    <div class="col-6 "> 
+        <img class="w-100" [src]="img" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+    </div>
+    <a (click)="change()" class=" btn btn-success"> close</a>
+
+</div>
+
+<div class=" container mt-5">
+    <h2 class=" h1 text-center m-5">portfolio</h2>
+<div class="row g-3">
+    
+        <div class="col-md-4 layer2   "  style=" cursor: pointer; " (click)="test(i.img ,i.name)"  *ngFor="let i of imgData">
+
+     <div class=" position-relative">
+                   <img class="w-100" [src]="i.img" alt="" >
+        
+        <div class="layer row  m-0 position-absolute top-0 bottom-0 start-0 end-0 bg-success text-center align-items-center ">
+                  <i   class=" fas fa-plus fa-4x"></i>
+                   
+               </div>
+        
+     </div>
+        </div>
+    </div>
+</div>
